@@ -1,3 +1,39 @@
-.home-btn {
+body {
+    margin: 0;
+}
+
+button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
+    width: 100px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #715711;
+}
+
+.page-header {
+    height: 120px;
+    background-color: #fcf4b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 120px;
+    width: 150px;
+    position: absolute;
+    left: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    width: auto;
+}
+
+button:hover {
+    color: #212c0c;
 }

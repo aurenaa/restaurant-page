@@ -1,10 +1,10 @@
 //for creating the homepage, and removing stuff
-import createRestauranHomePage from './restaurant';
+import createRestaurantHomePage from './restaurant';
 import createTabs from './tabs';
 
 function intialLoad() { //to initialize the page
+    createRestaurantHomePage();
     createTabs();
-    createRestauranHomePage();
 }
 
 export default intialLoad;
