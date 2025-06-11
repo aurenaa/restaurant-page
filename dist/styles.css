@@ -13,6 +13,7 @@ button {
     background: none;
     color: #715711;
     font-size: 18px;
+    text-shadow: 1px 1px 1px #a78117;
 }
 
 .page-header {
@@ -24,6 +25,7 @@ button {
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0px 2px 3px #847f59;
 }
 
 .logo {
@@ -58,11 +60,13 @@ button:hover {
     border-radius: 25px;
     width: 50px;
     height: 50px;
+    box-shadow: 0px 2px 3px rgb(38, 38, 37);
 }
 
 .left-arrow:hover, .right-arrow:hover {
-    background-color: rgb(41, 41, 41);
+    background-color: rgba(41, 41, 41, 0.7);
     color: white;
+    box-shadow: 0px 2px 3px black;
 }
 
 .left-arrow {
@@ -89,8 +93,10 @@ button:hover {
     border-radius: 10px;
     background-color: rgba(55, 55, 54, 0.6);
     border: white solid;
+    box-shadow: 0px 2px 3px rgb(38, 38, 37);
 }
 
 .slider-one:hover, .slider-two:hover, .slider-three:hover {
-    background-color: rgb(41, 41, 41);
+    background-color: rgba(41, 41, 41, 0.7);
+    box-shadow: 0px 2px 3px black;
 }
