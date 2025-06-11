@@ -115,10 +115,10 @@ function createRestaurantHomePage() {
     threeOne.src = "/6.jpg";
     const threeTwo = document.createElement("img");
     threeTwo.classList.add("threeTwo");
-    threeTwo.src = "/5.jpg";
+    threeTwo.src = "/1.png";
     const fourOne = document.createElement("img");
     fourOne.classList.add("fourOne");
-    fourOne.src = "/1.png";
+    fourOne.src = "/5.jpg";
     const fourTwo = document.createElement("img");
     fourTwo.classList.add("fourTwo");
     fourTwo.src = "/4.jpg";
@@ -130,6 +130,31 @@ function createRestaurantHomePage() {
     menuPictures.appendChild(threeTwo);
     menuPictures.appendChild(fourOne);
     menuPictures.appendChild(fourTwo);
+
+    const aboutSection = document.createElement("div");
+    aboutSection.classList.add("about-section");
+    pageContent.appendChild(aboutSection);
+
+    const aboutImage = document.createElement("img");
+    const aboutText = document.createElement("div");
+    aboutImage.classList.add("about-img");
+    aboutText.classList.add("about-text");
+    aboutSection.appendChild(aboutImage);
+    aboutSection.appendChild(aboutText);
+
+    aboutImage.src = "/9.jpg";
+
+    const about = document.createElement("h1");
+    about.textContent = "About Us";
+    aboutText.appendChild(about);
+
+    const aboutParOne = document.createElement("p");
+    aboutParOne.textContent = "Welcome to Slice Haven — your local slice joint in the heart of NYC! We’re a family-owned pizzeria that’s all about great pizza, good vibes, and making everyone feel at home. Whether you're a long-time New Yorker or visiting for the first time, we’ve got a slice for you. From our cheesy classics to our creative specials, each pizza is made with love and a whole lot of flavor. Come on in, kick back, and enjoy the best slice in town!";
+    aboutText.appendChild(aboutParOne);
+
+    const aboutParTwo = document.createElement("p");
+    aboutParTwo.textContent = "In addition to our mouth-watering pizzas, we also offer a variety of delectable desserts and a selection of craft beers to complement your meal. From creamy tiramisu to rich chocolate lava cakes, our desserts are the perfect sweet ending to your slice. And whether you’re a beer connoisseur or just looking to try something new, our craft beer menu features local brews that pair perfectly with any dish. So, whether you're here for a quick bite or a leisurely evening with friends, we've got everything to satisfy your cravings and elevate your experience!";
+    aboutText.appendChild(aboutParTwo);
 
     const pageHeader = document.createElement("div");
     pageHeader.classList.add("page-header");

@@ -114,7 +114,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: 500px;
+    min-height: 500px;
 }
 
 .menu-tab {
@@ -152,7 +152,40 @@ button:hover {
 
 .oneOne, .oneTwo, .twoOne, .twoTwo, .threeOne, .threeTwo, .fourOne, .fourTwo {
     width: 100%;
-    height: auto; /* Omogućava da slika zadrži proporcije */
-    max-height: 180px; /* Postavi maksimalnu visinu slike, možeš podesiti vrednost po želji */
-    object-fit: cover; /* Ova opcija omogućava da slike budu urezane ako su veće od prostora */
+    height: auto; 
+    max-height: 180px; 
+    object-fit: cover; 
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: 500px;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #715711;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #bca567;    
+    text-align: center;
+    justify-content: center;
+}
+
+.about-text h1 {
+    border-bottom: 1px solid #715711;
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
 }
