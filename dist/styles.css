@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 5000px;
+    height: auto;
     background-color: #f1ecbf;
 }
 
@@ -188,4 +188,23 @@ button:hover {
     border-bottom: 1px solid #715711;
     padding-bottom: 10px; 
     margin-bottom: 20px; 
+}
+
+.hours {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #715711;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #bca567;    
+    text-align: center;
+    justify-content: center;    
+}
+
+.hours h1 {
+    border-bottom: 1px solid #715711;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }

@@ -156,6 +156,26 @@ function createRestaurantHomePage() {
     aboutParTwo.textContent = "In addition to our mouth-watering pizzas, we also offer a variety of delectable desserts and a selection of craft beers to complement your meal. From creamy tiramisu to rich chocolate lava cakes, our desserts are the perfect sweet ending to your slice. And whether you’re a beer connoisseur or just looking to try something new, our craft beer menu features local brews that pair perfectly with any dish. So, whether you're here for a quick bite or a leisurely evening with friends, we've got everything to satisfy your cravings and elevate your experience!";
     aboutText.appendChild(aboutParTwo);
 
+    const hours = document.createElement("div");
+    hours.classList.add("hours");
+    pageContent.appendChild(hours);
+
+    const hoursParOne = document.createElement("h1");
+    hoursParOne.textContent = "WORK HOURS";
+    hours.appendChild(hoursParOne);
+
+    const hoursParTwo = document.createElement("p");
+    hoursParTwo.textContent = "Slice Haven is open for our guests throught the whole week, both on workdays and weekends.";
+    hours.appendChild(hoursParTwo);
+
+    const hoursParThree = document.createElement("p");
+    hoursParThree.textContent = "Monday - Friday: 9am - 23pm";
+    hours.appendChild(hoursParThree);
+
+    const hoursParFour = document.createElement("p");
+    hoursParFour.textContent = "Sunday - Saturday: 10am - 23pm";
+    hours.appendChild(hoursParFour);
+
     const pageHeader = document.createElement("div");
     pageHeader.classList.add("page-header");
     pageContent.classList.add("page-content");
