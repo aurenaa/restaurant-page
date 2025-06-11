@@ -1,5 +1,4 @@
 //adding image, headline ect.
-import clearContent from "./tabs"
 let isHeaderCreated = false;
 
 function createRestaurantHomePage() {
@@ -67,6 +66,70 @@ function createRestaurantHomePage() {
     imageSliderThree.addEventListener("click", () => {
         restaurantFront.src = images[2];        
     });
+
+    const reservation = document.createElement("p");
+    reservation.textContent = "Call us today to make a reservation: +646-708-7615";
+    reservation.classList.add("reservation");
+    pageContent.appendChild(reservation);
+
+    const menuSection = document.createElement("div");
+    menuSection.classList.add("menu-section");
+    pageContent.appendChild(menuSection);
+
+    const menuTab = document.createElement("div");
+    menuTab.classList.add("menu-tab");
+    const menuPictures = document.createElement("div");
+    menuPictures.classList.add("menu-pictures");
+    menuSection.appendChild(menuTab);
+    menuSection.appendChild(menuPictures);
+
+    const menuGraphic = document.createElement("img");
+    menuGraphic.classList.add("menu-graphic");
+    menuGraphic.src = "/forkknife.png";
+    menuTab.appendChild(menuGraphic);
+
+    const menuParagraph = document.createElement("p")
+    menuParagraph.classList.add("menu-paragraph");
+    menuParagraph.textContent = "Here you can view the complete menu.";
+    menuTab.appendChild(menuParagraph);
+
+    const menuButton = document.createElement("button");
+    menuButton.classList.add("menu-button");
+    menuButton.textContent = "Menu";
+    menuTab.appendChild(menuButton);
+
+    const oneOne = document.createElement("img");
+    oneOne.classList.add("oneOne");
+    oneOne.src = "/1.1.png";
+    const oneTwo = document.createElement("img");
+    oneTwo.classList.add("oneTwo");
+    oneTwo.src = "/3.jpg";
+    const twoOne = document.createElement("img");
+    twoOne.classList.add("twoOne");
+    twoOne.src = "/7.jpg";
+    const twoTwo = document.createElement("img");
+    twoTwo.classList.add("twoTwo");
+    twoTwo.src = "/2.jpg";
+    const threeOne = document.createElement("img");
+    threeOne.classList.add("threeOne");
+    threeOne.src = "/6.jpg";
+    const threeTwo = document.createElement("img");
+    threeTwo.classList.add("threeTwo");
+    threeTwo.src = "/5.jpg";
+    const fourOne = document.createElement("img");
+    fourOne.classList.add("fourOne");
+    fourOne.src = "/1.png";
+    const fourTwo = document.createElement("img");
+    fourTwo.classList.add("fourTwo");
+    fourTwo.src = "/4.jpg";
+    menuPictures.appendChild(oneOne);
+    menuPictures.appendChild(oneTwo);
+    menuPictures.appendChild(twoOne);
+    menuPictures.appendChild(twoTwo);
+    menuPictures.appendChild(threeOne);
+    menuPictures.appendChild(threeTwo);
+    menuPictures.appendChild(fourOne);
+    menuPictures.appendChild(fourTwo);
 
     const pageHeader = document.createElement("div");
     pageHeader.classList.add("page-header");

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     height: 5000px;
+    background-color: #f1ecbf;
 }
 
 button {
@@ -99,4 +100,59 @@ button:hover {
 .slider-one:hover, .slider-two:hover, .slider-three:hover {
     background-color: rgba(41, 41, 41, 0.7);
     box-shadow: 0px 2px 3px black;
+}
+
+.reservation {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #715711;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #bca567;    
+}
+
+.menu-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 500px;
+}
+
+.menu-tab {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-graphic {
+    width: 120px;
+    height: 120px;
+}
+
+.menu-paragraph {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #715711;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #bca567;    
+}
+
+.menu-button {
+    width: 130px;
+    height: 45px;
+    border: #bca567 solid;
+    background-color: #bca567;
+}
+
+.menu-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.oneOne, .oneTwo, .twoOne, .twoTwo, .threeOne, .threeTwo, .fourOne, .fourTwo {
+    width: 100%;
+    height: auto; /* Omogućava da slika zadrži proporcije */
+    max-height: 180px; /* Postavi maksimalnu visinu slike, možeš podesiti vrednost po želji */
+    object-fit: cover; /* Ova opcija omogućava da slike budu urezane ako su veće od prostora */
 }
