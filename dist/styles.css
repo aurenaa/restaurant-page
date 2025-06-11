@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    height: 5000px;
 }
 
 button {
@@ -11,6 +12,7 @@ button {
     border: none;
     background: none;
     color: #715711;
+    font-size: 18px;
 }
 
 .page-header {
@@ -19,13 +21,17 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .logo {
     height: 120px;
-    width: 150px;
+    width: 160px;
     position: absolute;
     left: 20px;
+    cursor: pointer;
 }
 
 .buttons {
@@ -36,4 +42,55 @@ button {
 
 button:hover {
     color: #212c0c;
+}
+
+.restaurant-front {
+    width: 100%;
+    height: 580px;
+    position: relative;
+}
+
+.left-arrow, .right-arrow {
+    position: absolute;
+    background-color: rgba(55, 55, 54, 0.6);
+    color: white;
+    margin-left: 280px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+.left-arrow {
+    inset-block-start: 370px;
+    inset-inline-start: -240px;
+}
+
+.right-arrow  {
+    inset-block-start: 370px;
+    inset-inline-start: 1150px;
+}
+
+.sliders {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    inset-block-start: 605px;
+    inset-inline-start: 700px;
+}
+
+.slider-one, .slider-two, .slider-three {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(55, 55, 54, 0.6);
+    border: white solid;
+}
+
+.slider-one:hover, .slider-two:hover, .slider-three:hover {
+    background-color: rgb(41, 41, 41);
 }

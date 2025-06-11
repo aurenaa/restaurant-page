@@ -15,6 +15,11 @@ function createTabs() {
     div2.setAttribute("id", "menu-btn");
     div3.setAttribute("id", "contact-btn");
 
+    const restaurantLogo = document.createElement("img");
+    restaurantLogo.classList.add("logo");
+    restaurantLogo.src = "/logo.png";
+    pageHeader.appendChild(restaurantLogo);
+
     div1.textContent = "Home";
     div2.textContent = "Menu";
     div3.textContent = "Contact";
@@ -23,6 +28,11 @@ function createTabs() {
     divButtons.appendChild(div1);
     divButtons.appendChild(div2);
     divButtons.appendChild(div3);
+
+    restaurantLogo.addEventListener("click", () => {
+        clearContent();
+        createRestaurantHomePage();
+    })
 
     div1.addEventListener("click", () => {
         clearContent();
@@ -48,4 +58,4 @@ function clearContent() {
     }
 }
 
-export default createTabs;
+export default createTabs; clearContent;
