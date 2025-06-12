@@ -17,6 +17,10 @@ function createContactPage() {
     contactInfo.classList.add("contact-info");
     contact.appendChild(contactInfo);
 
+    const contactUs = document.createElement("h3");
+    contactUs.textContent = "Contact information:";
+    contactInfo.appendChild(contactUs);
+
     const address = document.createElement("p");
     address.textContent = "Address: 82 Iroquois Road Brooklyn, NY 11213";
     contactInfo.appendChild(address);
@@ -53,7 +57,7 @@ function createContactPage() {
 
     const nameInput = document.createElement("input");
     nameInput.type = "text";
-    nameInput.placeholder = "Your Name";
+    nameInput.placeholder = "John Smith";
     nameInput.id = "name";
     form.appendChild(nameInput);
 
@@ -64,7 +68,7 @@ function createContactPage() {
 
     const emailInput = document.createElement("input");
     emailInput.type = "email";
-    emailInput.placeholder = "Your Email";
+    emailInput.placeholder = "someone@example.com";
     emailInput.id = "email";
     form.appendChild(emailInput);
 
@@ -74,7 +78,6 @@ function createContactPage() {
     form.appendChild(messageLabel);
 
     const messageInput = document.createElement("textarea"); // koristi textarea za poruke
-    messageInput.placeholder = "Your Message";
     messageInput.id = "message";
     form.appendChild(messageInput);
 
