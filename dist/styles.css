@@ -306,19 +306,70 @@ button:hover {
     inset-block-start: 270px;
     inset-inline-start: 200px;   
     color: #ffffff;
-    text-shadow: 1px 1px 1px #bca567;
+    text-shadow: 1px 1px 1px #000000;
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lobster";
 }
 
 .under-line {
-    width: 240px;
+    width: 200px;
     height: 20px;
     position: absolute;
     inset-block-start: 350px;
     inset-inline-start: 200px;   
     color: #ffffff;
-    text-shadow: 1px 1px 1px #bca567;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 50px; 
+}
+
+
+.food-section {
+    margin-top: 20px;
+}
+
+.menu-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.menu-row-reverse {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 20px;
+}
+
+.menu-img-left, .menu-img-right {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.menu-details {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #333;
+    padding-left: 10px;
+}
+
+.menu-details strong {
+    font-size: 24px;
+    color: #000;
+}
+
+.pepperoni-info {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.pepperoni-info h3, .pepperoni-info p {
+    margin: 0;
+    padding: 0;
+}
+
+.pepperoni p {
+    margin-top: 0;
 }
