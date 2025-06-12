@@ -287,3 +287,38 @@ button:hover {
 .submit-btn:hover {
     color: #212c0c;
 }
+
+/*MENU*/
+.menu-head {
+    background-color: black;
+    max-height: 405px;
+}
+
+.menu-img {
+    opacity: 50%;
+    width: 100%;
+    max-height: 405px;
+    position: relative;
+}
+
+.head-line {
+    position: absolute;
+    inset-block-start: 270px;
+    inset-inline-start: 200px;   
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #bca567;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.under-line {
+    width: 240px;
+    height: 20px;
+    position: absolute;
+    inset-block-start: 350px;
+    inset-inline-start: 200px;   
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #bca567;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
