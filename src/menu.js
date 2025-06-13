@@ -3,24 +3,27 @@ function createMenuPage() {
     const pageContent = document.createElement("div");
     pageContent.classList.add("page-content");
 
-    const menuHead = document.createElement("div");
-    menuHead.classList.add("menu-head");
-    content.appendChild(menuHead);
+    if(!document.querySelector(".menu-head")) {
+        const menuHead = document.createElement("div");
+        menuHead.classList.add("menu-head");
 
-    const menuImage = document.createElement("img");
-    menuImage.classList.add("menu-img");
-    menuImage.src = "/menu-img.jpeg";
-    menuHead.appendChild(menuImage);
+        const menuImage = document.createElement("img");
+        menuImage.classList.add("menu-img");
+        menuImage.src = "/menu-img.jpeg";
+        menuHead.appendChild(menuImage);
 
-    const menuUnderline = document.createElement("img");
-    menuUnderline.classList.add("under-line");
-    menuUnderline.src = "/underline.png";
-    menuHead.appendChild(menuUnderline);
+        const menuUnderline = document.createElement("img");
+        menuUnderline.classList.add("under-line");
+        menuUnderline.src = "/underline.png";
+        menuHead.appendChild(menuUnderline);
 
-    const headline = document.createElement("h1");
-    headline.textContent = "Our Menu";
-    headline.classList.add("head-line");
-    menuHead.appendChild(headline);
+        const headline = document.createElement("h1");
+        headline.textContent = "Our Menu";
+        headline.classList.add("head-line");
+        menuHead.appendChild(headline);
+
+        content.appendChild(menuHead);
+    }
 
     const foodSection = document.createElement("div");
     foodSection.classList.add("food-section");
@@ -486,7 +489,7 @@ function createMenuPage() {
     const appleCrumbleIngredients = document.createElement("p");
     appleCrumbleIngredients.textContent = "";
     appleCrumble.appendChild(appleCrumbleIngredients);    
-
+    
     content.appendChild(pageContent);
 }
 

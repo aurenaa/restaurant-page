@@ -2,6 +2,8 @@ import createRestaurantHomePage from "./restaurant";
 import createMenuPage from "./menu";
 import createContactPage from "./contact";
 
+let currentTab = "home";
+
 function createTabs() {
     const pageHeader = document.querySelector(".page-header");
     const divButtons = document.createElement("div");
@@ -35,26 +37,38 @@ function createTabs() {
     })
 
     div1.addEventListener("click", () => {
+        if (currentTab === "home") return;
         clearContent();
         createRestaurantHomePage();
-    })
+        currentTab = "home";
+    });
 
     div2.addEventListener("click", () => {
+        if (currentTab === "menu") return;
         clearContent();
         createMenuPage();
-    })
+        currentTab = "menu";
+    });
 
     div3.addEventListener("click", () => {
+        if (currentTab === "contact") return;
         clearContent();
         createContactPage();
-    })
+        currentTab = "contact";
+    });
 }
 
 function clearContent() {
     const content = document.querySelector("#content");
     const pageContent = document.querySelector(".page-content");
+    const menuHead = document.querySelector(".menu-head");
+    
     if (pageContent) {
         content.removeChild(pageContent);
+    }
+
+    if (menuHead) {
+        content.removeChild(menuHead);
     }
 }
 

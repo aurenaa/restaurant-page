@@ -1,3 +1,6 @@
+import createMenuPage from "./menu";
+import clearContent from "./tabs";
+
 //adding image, headline ect.
 let isHeaderCreated = false;
 
@@ -97,6 +100,13 @@ function createRestaurantHomePage() {
     menuButton.classList.add("menu-button");
     menuButton.textContent = "Menu";
     menuTab.appendChild(menuButton);
+
+    menuButton.addEventListener("click", () => {
+        const menuTabButton = document.querySelector("#menu-btn");
+        if (menuTabButton) {
+            menuTabButton.click();
+        }
+    });
 
     const oneOne = document.createElement("img");
     oneOne.classList.add("oneOne");
