@@ -359,17 +359,17 @@ button:hover {
     color: #000;
 }
 
-.pepperoni-info {
+.pizza-info {
     align-items: center;
     display: flex;
     gap: 10px;
 }
 
-.pepperoni-info h3, .pepperoni-info p {
+.pizza-info h3, .pizza-info p {
     margin: 0;
     padding: 0;
 }
 
-.pepperoni p {
+.pizza p {
     margin-top: 0;
 }
